@@ -11,5 +11,6 @@ namespace MyCoolApi.Models
         public int Price { get; set; }
         public string PartNumber { get; set; }
         public string Sport { get; set; }
+        public string Brand { get; set; }
     }
 }

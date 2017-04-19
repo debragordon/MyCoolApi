@@ -136,9 +136,15 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CleatController.cs" />
+    <Compile Include="Controllers\WrenchController.cs" />
+    <Compile Include="DAL\CleatRepository.cs" />
+    <Compile Include="DAL\WrenchRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\ICleatRepository.cs" />
+    <Compile Include="Interfaces\IWrenchRepository.cs" />
     <Compile Include="Models\Cleat.cs" />
     <Compile Include="Models\Wrench.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -158,10 +164,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="DAL\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Repos\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
