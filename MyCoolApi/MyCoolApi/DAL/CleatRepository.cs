@@ -9,19 +9,19 @@ namespace MyCoolApi.DAL
 {
     public class CleatRepository : ICleatRepository
     {
-        public Cleat AddNewWrench(Cleat newWrench)
+        public Cleat AddNewCleat(Cleat newCleat)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); //implement this method
         }
 
         public List<Cleat> GetAllCleats()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); //implement this method
         }
 
         public Cleat GetByPartNumber(string partNo)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); //implement this method
         }
     }
 }

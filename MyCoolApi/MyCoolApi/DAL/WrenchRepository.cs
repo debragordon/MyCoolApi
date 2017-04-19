@@ -11,17 +11,17 @@ namespace MyCoolApi.DAL
     {
         public Wrench AddNewWrench(Wrench newWrench)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); //implement this method
         }
 
         public List<Wrench> GetAllWrenches()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); //implement this method
         }
 
         public Wrench GetByPartNumber(string partNo)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); //implement this method
         }
     }
 }

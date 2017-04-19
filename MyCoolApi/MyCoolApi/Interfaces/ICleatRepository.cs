@@ -11,6 +11,6 @@ namespace MyCoolApi.Interfaces
     {
         Cleat GetByPartNumber(string partNo);
         List<Cleat> GetAllCleats();
-        Cleat AddNewWrench(Cleat newWrench);
+        Cleat AddNewCleat(Cleat newCleat);
     }
 }
