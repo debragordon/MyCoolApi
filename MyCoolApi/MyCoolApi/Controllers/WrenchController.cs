@@ -56,14 +56,14 @@ namespace MyCoolApi.Controllers
 
         [HttpPost]
         [Route("api/wrench/{newWrench}")]
-        public HttpResponseMessage AddNewCleat()
+        public HttpResponseMessage AddNewCleat(Wrench newWrench)
         {
-            var addedWrench = _wrenchRepo.AddNewWrench(Wrench newWrench);
+            var addedWrench = _wrenchRepo.AddNewWrench(newWrench);
 
             if (addedWrench == null)
             {
                 return Request.CreateErrorResponse(HttpStatusCode.NotModified,
-                    $"Your item {newaddedWrench} was not added.");
+                    $"Your item {addedWrench} was not added.");
             }
 
             return Request.CreateResponse(HttpStatusCode.OK, addedWrench);

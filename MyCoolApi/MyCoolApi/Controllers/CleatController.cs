@@ -56,9 +56,9 @@ namespace MyCoolApi.Controllers
 
         [HttpPost]
         [Route("api/cleat/{newCleat}")]
-        public HttpResponseMessage AddNewCleat()
+        public HttpResponseMessage AddNewCleat(Cleat newCleat)
         {
-            var addedCleat = _cleatRepo.AddNewCleat(Cleat newCleat);
+            var addedCleat = _cleatRepo.AddNewCleat(newCleat);
 
             if (addedCleat == null)
             {
